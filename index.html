@@ -126,6 +126,10 @@
       padding: 1rem;
       margin-top: 2rem;
     }
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
 
     .social-icons {
       margin-top: 0.5rem;
@@ -148,36 +152,49 @@
       }
     }
   </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
   <header>
     <h1>BDEO 2025</h1>
     <nav>
-      <a href="https://reg.bdeo.org">Registration Now</a>
-      <a href="#previous-questions">Previous Questions</a>
+      <a href="https://reg.bdeo.org">Register Now</a>
+      <a href="#preparation">Preparation</a>
     </nav>
   </header>
 
   <section class="hero">
     <h2>Bangladesh Economics Olympiad 2025</h2>
     <div class="countdown" id="countdown"></div>
-    <a href="#" class="btn-register" target="_blank"><span>Enter Exam Link (Not Working Now)</span></a>
+    <a href="#" class="btn-register" target="_blank"><span>Exam Link (Not Working Now)</span></a>
   </section>
 
   <section id="registration" style="padding: 2rem;">
-    <h2>Exam</h2>
-    <p> The BDEO 2025 Selection Round exam will be held on May 16, 2025, at 9:00 PM (Bangladesh Standard Time). Access the exam via this link on the scheduled date.</p>
+    <h2>Exam Notes</h2>
+    <ul>
+      <li>The BDEO 2025 Selection Round exam will be held on May 16, 2025, at 9:00 PM (Bangladesh Standard Time). Access the exam via this link on the scheduled date.</li></ul>
   </section>
 
+  <section id="preparation" style="padding: 2rem;">
+    <h2>Preparation Resources</h2>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/1atdMsmDsbOXWu0kyCp2p81C5hdZAxEXJ/view?usp=sharing">BDEO Textbook</a></li>
+      <li><a href="https://drive.google.com/drive/folders/1AIuRgukkZdOlGi4LkAMSpX9sGLdxkFb_?usp=drive_link">BDEO Question Paper 2022</a></li>
+      <li><a href="https://drive.google.com/drive/folders/1dwxqarDcWEwR_PEmvzpFIqMp1xAXGBpC?usp=drive_link">BDEO Question Paper 2023</a></li>
+       <li><a href="https://drive.google.com/drive/folders/1MM5HqEFCAajkzhB59qDy5hqG3Pd_HvC7?usp=drive_link">BDEO Question Paper 2024</a></li>
+      <li><a href="https://ieo-official.org/prepare">IEO Syllabus & Guideline</a></li>
 
+    </ul>
+  </section>
 
   <footer>
-    &copy; Bangladesh Economics Olympiad 2025 ❤️ by  <a href="https://md-sanaul-haque-shanto.github.io/" target="_blank">Md Sanaul Haque Shanto</a>.
-    <div class="social-icons">
-      <a href="https://www.facebook.com/BdEO.Official" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-    </div>
+     <div class="social-icons">
+      <a href="https://www.facebook.com/BdEO.Official" target="_blank"> Find us on <i class="fab fa-facebook"></i></a>
+    </div> 
+  </br>
+    &copy; Bangladesh Economics Olympiad Foundation Built with ❤️ by  <a href="https://md-sanaul-haque-shanto.github.io/" target="_blank">Sanaul Haque</a>.
+   
   </footer>
 
   <script>
@@ -196,7 +213,7 @@
       countdownEl.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 
       if (distance < 0) {
-        countdownEl.innerHTML = "Registration Open!";
+        countdownEl.innerHTML = "Exam Started!";
       }
     }
 
